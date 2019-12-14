@@ -1,5 +1,5 @@
 # VueWEB
-使用Node.js作为后台，Vue.js+ElementUI构建前端页面，物流车辆管理系统
+使用Node.js作为后台，Vue.js+ElementUI构建前端页面，后台管理系统
 ## 当前实现后台内容:
   * 后台登陆接口
   * 后台注册接口
