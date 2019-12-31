@@ -4,6 +4,9 @@ import Index from '../views/index.vue'
 import register from '../views/Register.vue'
 import nf from '../views/404.vue'
 import login from '../views/Login.vue'
+import home from '../views/Home.vue'
+import info from '../views/Info.vue'
+import fundlist from '../views/Fundlist.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +18,21 @@ const routes = [
   {
     path: '/index',
     name: 'index',
-    component: Index
+    component: Index,
+    children:[
+      {
+        path: '', component: home
+      },
+      {
+        path: '/home',name: "home",component:home
+      },
+      {
+        path: '/info',name: "info", component: info
+      },
+      {
+        path: '/fundlist',name: 'fundlist',component: fundlist
+      }
+    ]
   },
   {
     path: '/register',
@@ -31,7 +48,8 @@ const routes = [
     path: '*',
     name: 'notf',
     component: nf
-  }
+  },
+  
 ]
 
 const router = new VueRouter({

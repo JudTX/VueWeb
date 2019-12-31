@@ -16,7 +16,7 @@
             <!-- 下拉箭头 -->
             <el-dropdown trigger="click" @command="setInfo">
               <span class="el-dropdown-link">
-                <i class="el-icon-caret-bottom el-icon--right"></i>
+                下拉菜单<i class="el-icon-caret-bottom el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
                 <el-dropdown-item command="info">个人信息</el-dropdown-item>
@@ -51,7 +51,8 @@
         }
       },
       showInfoList(){
-        console.log("个人信息");
+        // console.log("个人信息");
+        this.$router.push("/info")
       },
       logout(){
         // console.log("退出");
@@ -72,7 +73,7 @@
     height: 80px;
     min-width: 600px;
     padding: 5px;
-    background: #409eff;
+    background-color: #be3144;
     color: #fff;
     border-bottom: 1px solid #1f2d3d;
   }
