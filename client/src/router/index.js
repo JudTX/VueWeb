@@ -7,6 +7,7 @@ import login from '../views/Login.vue'
 import home from '../views/Home.vue'
 import info from '../views/Info.vue'
 import fundlist from '../views/Fundlist.vue'
+import baidumap from '../views/Map.vue'
 
 Vue.use(VueRouter)
 
@@ -45,11 +46,15 @@ const routes = [
     component: login
   },
   {
+    path: '/map',
+    name: 'map',
+    component: baidumap
+  },
+  {
     path: '*',
     name: 'notf',
     component: nf
-  },
-  
+  }
 ]
 
 const router = new VueRouter({

@@ -1,6 +1,7 @@
 <template>
   <div class="notf">
     <img src="../assets/404.gif" alt="">
+    <map></map>
   </div>
 </template>
 

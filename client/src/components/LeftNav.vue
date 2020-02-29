@@ -26,6 +26,12 @@
             </router-link>
           </el-submenu>
         </template>
+        <router-link to="/map">
+          <el-menu-item index="0">
+            <i class="fa el-icon-position fa-server"></i>
+            <span slot="title">地图导航</span>
+          </el-menu-item>
+        </router-link>
       </el-menu>
     </el-col>
   </el-row>
@@ -39,9 +45,9 @@
           items:[
             {
               icon: 'fa-money',
-              name: '资金管理',
+              name: '任务管理',
               path: 'fund',
-              children: [{path: "fundlist",name: '资金流水'}]
+              children: [{path: "fundlist",name: '分配任务'},{path: "historylist",name: '历史任务'}]
             },
             {
               icon: 'fa-asterisk',

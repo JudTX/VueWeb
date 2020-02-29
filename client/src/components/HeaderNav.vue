@@ -75,7 +75,7 @@
     padding: 5px;
     background-color: #be3144;
     color: #fff;
-    border-bottom: 1px solid #1f2d3d;
+    border-bottom: 1px solid #324057;
   }
   .logo-container {
     line-height: 80px;

@@ -3,7 +3,7 @@
         <el-row>
             <el-col :span="6" class='logo-container'>
                 <img src="../assets/logo.png" class='logo' alt="">
-                <span class='title'>米修在线后台管理系统</span>
+                <span class='title'>物流车辆在线后台管理系统</span>
             </el-col>
             <el-col :span='6' class="user">
                 <div class="userinfo">
